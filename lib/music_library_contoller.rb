@@ -23,7 +23,7 @@ class MusicLibraryController
     
     def list_songs
       songs = Songs.all 
-      songs.sort()
+      songs.sort {|a, b| a.name <=> b.name}
         
       end 
     end 
