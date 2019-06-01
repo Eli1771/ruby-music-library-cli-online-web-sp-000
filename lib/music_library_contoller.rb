@@ -71,6 +71,7 @@ class MusicLibraryController
     genres = genre.songs.sort {|a, b| a.name <=> b.name}
     genres.each_with_index do |g, i|
       puts "#{i + 1}. #{g.name}"
+    end 
   end 
   def play_song
       
