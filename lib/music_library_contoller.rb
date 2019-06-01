@@ -76,6 +76,8 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp
-    
+    song = Song.find_by_name(input)
+    if !song.nil?
+      puts "Playing #{input} by "
   end 
 end 
