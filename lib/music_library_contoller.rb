@@ -67,7 +67,7 @@ class MusicLibraryController
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets.chomp 
-    genre = genre.find_or_create_by_name(input)
+    genre = Genre.find_or_create_by_name(input)
     genres = genre.songs.sort {|a, b| a.name <=> b.name}
     genres.each_with_index do |g, i|
       puts "#{i + 1}. #{g.name}"
