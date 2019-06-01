@@ -24,6 +24,8 @@ class MusicLibraryController
     def list_songs
       songs = Songs.all 
       songs.each_with_index do |s, i|
+        
+      end 
     end 
     def list_artists
       
