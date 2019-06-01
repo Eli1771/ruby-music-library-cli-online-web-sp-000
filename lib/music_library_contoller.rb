@@ -24,8 +24,9 @@ class MusicLibraryController
     def list_songs
       songs = Songs.all 
       songs.sort {|a, b| a.name <=> b.name}
-        
-      end 
+      songs.each_with_index do |s, i|
+        puts "#{(i + 1).to_s}. #{s.name}"
+      end
     end 
     def list_artists
       
