@@ -21,7 +21,7 @@ class MusicLibraryController
       input = gets.chomp
     end 
     
-    def self.list_songs
+    def list_songs
       songs = Songs.all 
       songs.sort {|a, b| a.name <=> b.name}
       songs.each_with_index do |s, i|
