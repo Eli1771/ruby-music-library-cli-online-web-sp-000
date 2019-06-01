@@ -58,6 +58,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.chomp
+    Artist.find_by_name(input)
     
   end
   def list_songs_by_genre
