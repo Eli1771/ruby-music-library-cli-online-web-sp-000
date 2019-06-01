@@ -25,6 +25,15 @@ class MusicLibraryController
         list_songs 
       when 'list artists'
         list_artists
+      when 'list genres'
+        list_genres 
+      when 'list songs by artist'
+        list_songs_by_artists
+      when 'list songs by genre' 
+        list_songs_by_genre 
+      when 'play song' 
+        play_song
+      end 
       end
     end 
     
